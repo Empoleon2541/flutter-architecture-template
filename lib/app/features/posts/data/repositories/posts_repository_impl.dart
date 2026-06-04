@@ -6,7 +6,6 @@ import '../../domain/entities/post.dart';
 import '../../domain/repositories/posts_repository.dart';
 import '../datasources/posts_local_datasource.dart';
 import '../datasources/posts_remote_datasource.dart';
-import '../models/post_model.dart';
 
 class PostsRepositoryImpl implements PostsRepository {
   final PostsRemoteDataSource remoteDataSource;

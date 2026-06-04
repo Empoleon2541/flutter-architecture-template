@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../../features/posts/presentation/pages/posts_page.dart';
-import '../../../features/realtime/presentation/pages/realtime_page.dart';
-import '../../../features/auth/presentation/pages/profile_page.dart';
-
 class MainShell extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
 
@@ -64,7 +60,6 @@ class MainShell extends StatelessWidget {
   }
 
   void _onTap(BuildContext context, int index) {
-    final paths = [PostsPage.path, RealtimePage.path, ProfilePage.path];
     // Use goBranch to preserve per-tab navigation state
     navigationShell.goBranch(
       index,

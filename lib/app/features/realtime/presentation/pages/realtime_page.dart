@@ -20,7 +20,7 @@ class RealtimePage extends StatelessWidget {
         final isConnected = state is RealtimeConnected;
         final isConnecting = state is RealtimeConnecting;
         final events =
-            isConnected ? (state as RealtimeConnected).events : [];
+            isConnected ? (state).events : [];
 
         return Column(
           children: [
